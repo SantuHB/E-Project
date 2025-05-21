@@ -1,0 +1,253 @@
+			
+				ASP.NET MVC (.NET FW)				ASP.NET MVC CORE (.NET CORE)
+	------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	
+	ASP.NET 
+	------------
+	Web Technology					---Dynamic Websites
+
+	ASP.NET  			+       	MVC ARCHITECTURE Or Pattern
+
+				ASP.NET MVC (.Net Fw and Windows )
+			
+								ASP.NET MVC CORE (Cross Platform ... .Net Core)
+
+
+	Concerns or Challenges 
+
+		3 Concerns
+
+		a. Application Logic (Data access code or Business Rules)
+		
+		b. UI logics			(User Interface)
+
+		c. Input Logic 		(Handle User Request / Response)
+
+
+	MVC 
+	Model 
+	View 
+	Controller
+		
+	MVC
+	MODEL VIEW CONTROLLER 
+
+	SEPARATION OF CONCERN(3)
+
+	E-SHOP
+
+	PRODUCT , CUSTOMER , PAYMENT , ORDER , ADMIN , CART 
+
+	APPLICATION DATA OR DOMAIN DATA 
+			----> 
+
+	1. APPLICATION LOGIC (DATA ACESS OR BUSINESS LOGIC)
+
+		PRODUCT , CUSTOMER , PAYMENT , ORDER , ADMIN , CART 
+
+		APPLICATION DATA OR DOMAIN DATA 
+
+
+	2. UI LOGIC
+
+		CODE RELATED UI ---HTML , CSS , JS , VIEW ,WEB FORMS 
+		
+
+	3. INPUT LOGIC
+		
+		REQUEST - RESPONSE LIFE CYCLE 
+
+	WHEN USER ENTERS INPUT (REQUEST)
+		RESPONSE REQUEST WITH APPROPRIATE DATA 
+
+	ASP.NET MVC 
+
+		WEB TECHNOOGY (.NET) WHICH HELPS TO CREATE DYNAMIC WEB APPLICATION
+		BASED ON MVC ARCHITECTURE
+
+	M	-- MODEL
+
+		APPLICATION DATA OR DOMAIN DATA 
+		PRODUCT , CUSTOMER , PAYMENT , ORDER , ADMIN , CART 
+
+	V	-- VIEW
+
+		CODE RELATED UI ---HTML , CSS , JS , VIEW ,WEB FORMS 
+
+	C	-- CONTROLLER
+
+		A. HANDLE USER INPUT 
+		B. REQUEST -RESPONSE LIFE CYCLE
+
+	HOW MVC APPLICATION WORKS 
+	-------------------------
+	MOBILE OR LAPTOP DETAILS
+
+	URL ----> 
+		HTTPS://GETMOBILES.HTML
+
+	USER REQUEST 
+			====> VALIDATE USER REQUEST 
+	PROPER URL OR NOT 
+			====> URL PATTERN ---SPECIFY WAY TO WRITE URL
+
+		RIGHT REQUEST
+		
+			----> GOES TO CONTROLLER ----> SEARCH FOR PROPER 
+			APPLICATION DATA (PRODUCT(MOBILE OR LAPTOP))
+			----> FETCH APPROPRIATE MODEL DATA
+			----> GENERATE VIEW ACCORDING MODEL(MOBILE OR LAPTOP) DATA
+			
+			      RENDERS OR SENDS VIEW BACK END USER
+
+			BEFORE SEND DATA END USER 
+				----> DESIGN OR HTML VIEW 
+			
+			
+		WRONG REQUEST 
+
+		---->URL DOES NOT MATCH --URL PATTERN DEFINED IN MVC APPLICATION
+		---->SERVER ERROR 
+			404 , 501 , 502
+		
+		
+		AMAZON.IN		
+
+	CONTROLLER 
+
+	ACTION METHODS
+	=============
+	INDEX , ABOUT OR CONTACT
+
+	DIFFERENT RETURN TYPE 
+
+	DEFAULT 
+		====>ActionResult
+				  ====>return View()
+	ACTION RESULT
+		BASE CLASS FOR ALL TYPES OF ACTION 
+	
+	DIFFERENT ACTION RESULT
+
+	ViewResult
+	JsonResult
+	ContentResult
+	FileResult
+
+	
+ SEND DATA FROM CONTROLLER TO VIEW
+	
+		A. VIEWDATA OBJECT
+
+		B. VIEWBAG OBJECT
+
+		C. MODEL OBJECT		
+					---STRONGLY TYPED HTML HELPER
+					STRONGLY TYPED MODEL BINDING 
+
+
+SEND DATA FROM VIEW TO CONTROLLER
+		
+		A. FORMCOLLECTION OBJECT
+
+		B. REQUEST.FORM
+
+		C. MODEL OBJECT		---STRONGLY TYPED HTML HELPER
+
+	DATA BINDING ??????
+
+		HTML ELEMENTS TO MODEL(CUSTOMER) PROPERTIES(ID,NAME,CONTACT)
+		(TEXTBOX)
+
+	VIEWDATA
+
+		STORE DATA IN FORM OF KEY/VALUE PAIRS.
+		
+		Syntax
+		------------
+		VIEWDATA["KEY_NAME"]=VALUE;
+		
+		REQUIRES TYPE CONVERSION BEFORE PRINT VALUE 
+
+	VIEWBAG	
+
+		STORE DATA IN FORM OF KEY/VALUE PAIRS.
+
+		Syntax
+		----------
+		VIEWBAG.KEY_NAME=VALUE;
+		
+		DOES NOT REQUIRE TYPE CONVERSION
+		VIEWBAG	INTERNALLY USES DYNAMIC KEYWORD.
+					------
+		INTRODUCED IN ASP.NET MVC 3.0
+
+		REFLECTIONS 
+			DYNAMIC KEYWORD 	===> C# 4.0 ===>.NET FW 4.0
+			DLR(DYNAMIC LANGUAGE RUNTIME)	
+				--->	HELPS TO INTERACT WITH DYNAMIC LANGUAGES 
+				--->	CREATE INSTANCE AT RUNTIME 
+	
+	
+	web.Config
+	
+	It's an xml document
+
+	Configuration settings applicable to entire application placed in
+	web.config
+
+	ConnectionString
+	Session State
+		
+
+	TempData
+	========
+	
+		PASS DATA FROM ONE CONTROLLER TO OTHER CONTROLLER 
+		ACTION(VIEW) METHOD
+
+	KEY/VALUE PAIR
+
+		TempData["keyName"]=Value;
+
+	TempData by default does not carry information to 
+	subsequent pages.
+
+	TempData.keep() 	or 	TempData.Peek()
+
+		Used to pass tempData information to subsequent Action methods.
+
+	TempData.Peek()
+		Does not delete TempData Key after using it.
+
+
+
+	Razor View
+	-----------------
+
+	.cshtml		or 		.vbhtml
+
+		C# or VB.Net code inside Razor view
+		
+		Statements
+		If else 
+		for or foreach Loops
+		while or switch 
+
+		
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+
+		
